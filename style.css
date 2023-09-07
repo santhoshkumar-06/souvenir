@@ -1,0 +1,174 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+ :root{
+     
+    --orange:#ff7809;
+    --black:#140f40;
+    --light-color:#666;
+    --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+
+ }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{ 
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background: #eee;
+}
+
+.tag1{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    right: 0;
+    z-index: 1000;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 2rem 9%;
+     background: #ffffff;
+     box-shadow: var(--box-shadow);
+
+}
+
+.tag1 .tag2{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.tag1 .tag2 i{
+    color: var(--orange);
+}
+
+.tag1 .tag3 a{
+         font-size: 1.7rem;
+         margin: 0 1rem;
+         color: var(--black);
+}
+
+.tag1 .tag3 a:hover{
+ color: var(--orange);
+}
+
+.tag1 .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .8rem;
+    background: #e2e0e0;
+    color: var(--black);
+    font-size: 2rem;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tag1 .icons div:hover{
+    color:#fff;
+    background: var(--orange);
+}
+
+#menu-btn{
+    display: none;
+}
+
+.tag1 .search-form{
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 50rem;
+    height: 5rem;
+    background: #fff;
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+.tag1 .search-form.active{
+    right: 1.5rem;
+    transition: .4s linear;
+}
+
+.tag1 .search-form input{
+    height: 100%;
+    width: 100%;
+    border-block-start-width: none;
+    text-transform: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 0 1.5rem;
+}
+
+.tag1 .search-form label{
+    font-size: 2.2rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.tag1 .search-form label:hover{
+    color: var(--orange);
+}
+h2{
+    margin-top: 6%;
+}
+
+
+.image-container {
+    width: 33.33%; /* Each container takes up one-third of the page width */
+    float: left;   /* Float the containers to make them appear side by side */
+    box-sizing: border-box; /* Include padding and borders in the container's width */
+    padding: 10px; /* Add some spacing around each image */
+}
+
+/* Style the images */
+.image-container img {
+    max-width: 100%; /* Ensure the images don't exceed the container width */
+    height: auto;   /* Maintain the aspect ratio of the images */
+    display: block; /* Remove any extra spacing below the images */
+}
+
+
+.image-container img{
+    width: 500px;
+    height: 500px;
+}
+.image-container a{
+    font-size: 2rem;
+    color: #ffffff;
+}
+button{
+    border-radius: 10px;
+    margin-top: 4%;
+    color: rgb(255, 255, 255);
+    padding: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+    background:var(--light-color)
+    
+}
+h1{
+    font-size: 24px;
+}
